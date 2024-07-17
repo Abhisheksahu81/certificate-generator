@@ -142,7 +142,7 @@ export default function Generate() {
                                 const options = {
                                     margin: 0,
                                     filename: `${name}-certificate.pdf`,
-                                    jdPDF: { unit: "mm", format: "b1", orientation: "landscape" }
+                                    jdPDF: { unit: "mm", format: "a4", orientation: "landscape" }
                                 };
                                 const exporter = new Html2Pdf(html, options);
                                 await exporter.getPdf(options);
